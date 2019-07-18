@@ -14,7 +14,18 @@ partOfBodyPlural =  input("Choose a part of the body but plural\n")
 nounPlural =  input("Choose a plural noun\n")
 verbEndInIng2 =  input("Choose another verb ending in Ing\n")
 noun2 =  input("Choose another noun\n")
+choice = input("Choose a story! Thanksgiving or Birds Revenge?\n")
+
+
 
 story = ("It was a " + adj1 + ", cold November day. I woke up to the " + adj2 + " smell of " + typeOfBird + " roasting in the " + roomInHouse + " downstairs. I " + verbPastTense + " down the stairs to see if I could help " + verb + " the dinner. My mom said, 'See if " + relativeName + " needs a fresh " + noun + ".' So I carried a tray of glasses full of " + liquidName + " into the " + verbEndInIng + " room. When I got there, I couldn't believe my " + partOfBodyPlural + "! There were " + nounPlural + " " + verbEndInIng2 + " on the " + noun2 + "!")
 
-story2 = ("It was a " + adj1 + "evening during a " + adj2 + " summer. Outside my basement window I saw " + typeOfBird + " trying to get into the " + roomInHouse + "! I " + verbPastTense + " up the stairs to the " + roomInHouse + ". When I got there the " + typeOfBird + " had flown through the window straight into " + relativeName + "! I rushed to call " + noun + " who was drinking " + liquidName + ". 'I have been " +verbEndInIng+ " for you.' They had their" +partOfBodyPlural+ "wraped around" + nounPlural + " '" + relativeName + "had it coming, they did eat" + typeOfBird + "before after all.' " + verbEndInIng2 + "that the damage was already done, I walked away to" + noun2 + ".")   
+story2 = ("It was a " + adj1 + " evening during a " + adj2 + " summer. Outside my basement window I saw " + typeOfBird + " trying to get into the " + roomInHouse + "! I " + verbPastTense + " up the stairs to the " + roomInHouse + ". When I got there the " + typeOfBird + " had flown through the window straight into " + relativeName + "! I rushed to call " + noun + " who was drinking " + liquidName + ". 'I have been " + verbEndInIng + " for you.' They had their " +partOfBodyPlural+ " wrapped around " + nounPlural + " '" + relativeName + " had it coming, they did eat " + typeOfBird + " before after all.' " + verbEndInIng2 + " that the damage was already done, I walked away to " + noun2 + ".")   
+
+if choice.lower == "thanksgiving":
+    print(story)
+elif choice.lower == "birds revenge" or "bird's revenge":
+    print(story2)
+else:
+    input("Please choose one of the stories.\n")
+
