@@ -14,7 +14,7 @@ partOfBodyPlural =  input("Choose a part of the body but plural\n")
 nounPlural =  input("Choose a plural noun\n")
 verbEndInIng2 =  input("Choose another verb ending in Ing\n")
 noun2 =  input("Choose another noun\n")
-choice = input("Choose a story! Thanksgiving or Birds Revenge?\n")
+
 
 
 
@@ -22,10 +22,25 @@ story = ("It was a " + adj1 + ", cold November day. I woke up to the " + adj2 + 
 
 story2 = ("It was a " + adj1 + " evening during a " + adj2 + " summer. Outside my basement window I saw " + typeOfBird + " trying to get into the " + roomInHouse + "! I " + verbPastTense + " up the stairs to the " + roomInHouse + ". When I got there the " + typeOfBird + " had flown through the window straight into " + relativeName + "! I rushed to call " + noun + " who was drinking " + liquidName + ". 'I have been " + verbEndInIng + " for you.' They had their " +partOfBodyPlural+ " wrapped around " + nounPlural + " '" + relativeName + " had it coming, they did eat " + typeOfBird + " before after all.' " + verbEndInIng2 + " that the damage was already done, I walked away to " + noun2 + ".")   
 
-if choice.lower == "thanksgiving":
-    print(story)
-elif choice.lower == "birds revenge" or "bird's revenge":
-    print(story2)
-else:
-    input("Please choose one of the stories.\n")
+def numCheck():
+    choice = input("Choose a story! Type 1 for Thanksgiving or Type 2 for Birds Revenge.\n")
+    if choice == "1":
+        print(story)
+    elif choice == "2":
+        print(story2)
+    else:
+        choice = input("Please choose one of the stories.\n")
+        numCheck()
+
+numCheck()
+
+# if choice.lower == "1":
+#     print(story)
+# elif choice.lower == "2":
+#     print(story2)
+# else:
+#     if choice.lower == "1":
+#         print(story)
+#     elif choice.lower == "2":
+#         print(story2)
 
